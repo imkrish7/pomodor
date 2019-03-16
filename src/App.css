@@ -1,33 +1,72 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  margin:0;
+  padding: 0;
+}
 .App {
+  position: relative;
   text-align: center;
+  background:#f46242;
+  color:#fff;
+  width:100%;
+  height:100vh;
+  
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
+.App >h1{
+  font-size: 50px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.Session{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin:10px;
+}
+.Session button{
+  align-items: center;
+  border:2px solid #fff;
+  font-weight: bold;
+  font-size: 25px;
+  background: #f46242;
+  color:#fff;
+  width:48px;
+  height: 40px;
+  border-radius: 5px;
+}
+.Session .timesetter{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.timesetter p{
+  width:48px;
+}
+button:focus{
+  outline:0;
+  
+}
+.Clock{
+  position: absolute;
+}
+.controler button{
+    margin:20px;
+    width:80px;
+    padding:10px;
+    background:#f46242;
+    border:2px solid #fff;
+    border-radius: 10px;
+    color:#fff;
+    font-size: 20px;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer{
+  box-sizing: border-box;
+  font-size:20px;
+  padding: 20px;
 }
